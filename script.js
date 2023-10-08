@@ -1,35 +1,30 @@
-//if,else,nested-if 
-// Perhitungan berat badan ideal anak bayi samai anak-anak
-console.log("Contoh if,else,nested-if : ");
+//if,else,nested if
+let nilai = prompt('Masukkan nilai bro : ');
 
-const satu_tahun = 12;
-
-let umur_bulan = 8;
-let berat_anak = 8;
-let BBI = 0;
-
-if (umur_bulan <= 12) {
-    BBI = umur_bulan / 2 + 4;
-    if (berat_anak < BBI - 2) {
-        console.log("Berat badan bayi anda kurang ideal");
-    }
-    if (berat_anak > BBI + 2) {
-        console.log("Berat badan bayi anda melebihi batas ideal");
-    } else {
-        console.log("berat badan bayi anda sudah ideal");
-    }
-} else if (umur < 10 * satu_tahun) {
-    BBI = (umur_bulan / satu_tahun) * 2 + 4;
-    if (berat_anak < BBI - 2) {
-        console.log("Berat badan anak anda kurang ideal");
-    }
-    if (berat_anak > BBI + 2) {
-        console.log("Berat badan anak anda melebihi batas ideal");
-    } else {
-        console.log("berat badan bayi anda sudah ideal");
-    }
+if (nilai >= 90 && nilai <= 100) {
+    alert('Nilai kamu A');
+}else if (nilai >= 80 && nilai <= 89) {
+    alert('Nilai kamu B');
+}else if (nilai >= 70 && nilai <= 79) {
+    alert('Nilai kamu C');
+} else if (nilai >= 60 && nilai <= 69) {
+    alert('Nilai kamu D');
+} else if (nilai >= 0 && nilai <= 59) {
+    alert('Nilai kamu E');
 } else {
-    console.log("Anak anda sudah menginjak Remaja")
+    alert('Tidak ada nilai');
+}
+
+// nested if
+let username = prompt('Masukkan username : ');
+let password = prompt('Masukkan password : ');
+
+if (username == "fajar") {
+    if (password == "123") {
+        alert('Login berhasil');
+    } else {
+        alert('Username atau Password salah');
+    }
 }
 
 
