@@ -1,16 +1,16 @@
 //if,else,nested if
-let nilai = prompt('Masukkan nilai bro : ');
+let nilai = prompt('Masukkan nilai : ');
 
 if (nilai >= 90 && nilai <= 100) {
-    alert('Nilai kamu A');
+    alert('Nilai A');
 }else if (nilai >= 80 && nilai <= 89) {
-    alert('Nilai kamu B');
+    alert('Nilai B');
 }else if (nilai >= 70 && nilai <= 79) {
-    alert('Nilai kamu C');
+    alert('Nilai C');
 } else if (nilai >= 60 && nilai <= 69) {
-    alert('Nilai kamu D');
+    alert('Nilai D');
 } else if (nilai >= 0 && nilai <= 59) {
-    alert('Nilai kamu E');
+    alert('Nilai E');
 } else {
     alert('Tidak ada nilai');
 }
